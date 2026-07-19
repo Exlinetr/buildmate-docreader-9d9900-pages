@@ -3,57 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy for DocReader</title>
+<title>DocReader Privacy Policy</title>
 <style>
-  :root { color-scheme: light; }
-  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.55; color: #1a1a1a; background: #f7f5f1; }
+  :root {
+    color-scheme: light;
+    --color-primary: #1d3253;
+    --color-secondary: #3a5273;
+    --color-accent: #4a90e2;
+    --color-background: #fdfefd;
+    --color-text: #233a5a;
+  }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.55; color: var(--color-text); background: var(--color-background); }
+  .band { height: 4px; background: var(--color-primary); }
   .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-  h1 { font-size: 1.85rem; margin: 0 0 0.75rem; letter-spacing: -0.02em; }
-  .app { color: #5c5c5c; font-size: 0.95rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; margin: 0 0 0.75rem; letter-spacing: -0.02em; color: var(--color-primary); }
+  .app { color: var(--color-secondary); font-size: 0.95rem; margin-bottom: 1.5rem; }
   .intro { margin: 0 0 1.75rem; }
-  h2 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; }
+  h2 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; color: var(--color-secondary); border-left: 3px solid var(--color-accent); padding-left: 0.65rem; }
   p { margin: 0 0 0.85rem; }
+  a { color: var(--color-primary); }
 </style>
 </head>
 <body>
+<div class="band" aria-hidden="true"></div>
 <main class="wrap">
-  <h1>Privacy Policy for DocReader</h1>
+  <h1>DocReader Privacy Policy</h1>
   <p class="app">DocReader</p>
-  <p class="intro">This Privacy Policy explains how DocReader collects, uses, and safeguards your information when you use our mobile application. We are committed to protecting your privacy and ensuring a secure user experience.</p>
+  <p class="intro">DocReader respects your privacy and is committed to protecting it. This Privacy Policy describes how we handle information when you use our mobile application. By using DocReader, you agree to the collection and use of information in accordance with this policy.</p>
   
   <section>
-    <h2>Information Collection and Use</h2>
-    <p>DocReader is designed to prioritize user privacy. The app requires access to your device&#39;s camera and photo gallery solely to allow you to select images for PDF conversion. We do not collect, store, or transmit your personal data, photos, or created PDF documents to any external servers.</p>
+    <h2>1. Data Collection and Local Processing</h2>
+    <p>DocReader does not collect, store, or transmit your personal documents, photos, or generated PDF files. All processing, image scanning, and document conversions occur entirely on your local mobile device.</p><p>We do not have access to your camera feed or gallery contents. The permissions you grant to the app are used purely by the local operating system to supply selected images to the application for PDF creation.</p>
   </section>
   
   <section>
-    <h2>Local Data Processing</h2>
-    <p>All image-to-PDF conversions are performed entirely on your device. Your images and documents are processed locally and are not uploaded to our servers, ensuring that your sensitive information remains private and secure under your own control.</p>
+    <h2>2. Usage Information and Diagnostics</h2>
+    <p>To improve the stability and performance of DocReader, we may collect anonymous, non-personally identifiable diagnostic and usage data. This includes information such as app crash logs, device manufacturer, operating system version, and general feature usage statistics.</p><p>This diagnostic information does not contain any personal data or details about the content of your documents.</p>
   </section>
   
   <section>
-    <h2>Third-Party Services</h2>
-    <p>DocReader does not share any personal information or document data with third-party services. The app operates independently on your device and does not integrate with tracking tools, analytics providers, or advertising networks that collect personal identifiable information.</p>
+    <h2>3. How We Use Collected Data</h2>
+    <p>Since we do not collect your personal files, we cannot and do not use them. Any anonymous diagnostic and usage information we receive is used solely to identify bugs, improve app stability, and optimize user experience.</p>
   </section>
   
   <section>
-    <h2>Data Security</h2>
-    <p>We take the security of your files seriously. Since all data processing occurs locally on your device, the security of your files is protected by your device&#39;s built-in operating system security features. We recommend keeping your device&#39;s operating system updated to ensure maximum security.</p>
+    <h2>4. Third-Party Services</h2>
+    <p>We do not sell, trade, or share your personal information or documents with third parties. Anonymous diagnostic data may be processed by service providers (such as crash-reporting and analytics services) to help us analyze app performance, subject to strict confidentiality agreements.</p>
   </section>
   
   <section>
-    <h2>Your Rights and Control</h2>
-    <p>You retain full ownership and control over your files, photos, and generated PDF documents. You can grant or revoke the app&#39;s permission to access your camera and photo gallery at any time through your mobile device&#39;s system settings.</p>
+    <h2>5. User Rights and Permissions</h2>
+    <p>You can grant or revoke camera and photo gallery permissions at any time through your device&#39;s settings menu. Revoking these permissions will prevent DocReader from accessing new images, but will not affect the safety of your existing local data.</p><p>Because we do not store your data on our servers, we do not hold any personal files that you can request to access, modify, or delete.</p>
   </section>
   
   <section>
-    <h2>Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the effective date. You are advised to review this Privacy Policy periodically for any changes.</p>
-  </section>
-  
-  <section>
-    <h2>Contact Us</h2>
-    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at privacy@docreaderapp.example.com.</p>
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy or how your data is handled, you can contact us at privacy@docreaderapp.com.</p>
   </section>
   
 </main>
