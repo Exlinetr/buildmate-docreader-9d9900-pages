@@ -1,56 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DocReader Privacy Choices</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DocReader - Terms and Conditions of Use</title>
 <style>
-  :root {
-    color-scheme: light;
-    --color-primary: #1d3253;
-    --color-secondary: #3a5273;
-    --color-accent: #4a90e2;
-    --color-background: #fdfefd;
-    --color-text: #233a5a;
-  }
-  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.55; color: var(--color-text); background: var(--color-background); }
-  .band { height: 4px; background: var(--color-primary); }
-  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-  h1 { font-size: 1.85rem; margin: 0 0 0.75rem; letter-spacing: -0.02em; color: var(--color-primary); }
-  .app { color: var(--color-secondary); font-size: 0.95rem; margin-bottom: 1.5rem; }
-  .intro { margin: 0 0 1.75rem; }
-  h2 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; color: var(--color-secondary); border-left: 3px solid var(--color-accent); padding-left: 0.65rem; }
-  p { margin: 0 0 0.85rem; }
-  a { color: var(--color-primary); }
+:root {
+  --color-primary: #1d3253;
+  --color-secondary: #3a5273;
+  --color-accent: #4a90e2;
+  --color-background: #fdfefd;
+  --color-text: #233a5a;
+}
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            color: var(--color-text);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--color-primary);
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        .subtitle { color: #64748b; font-size: 1.1rem; }
+        .last-updated {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        h1 {
+            color: var(--color-text);
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h2 {
+            color: var(--color-text);
+            font-size: 1.4rem;
+            margin: 30px 0 15px 0;
+            padding-left: 10px;
+            border-left: 4px solid var(--color-primary);
+        }
+        h3 { color: var(--color-text); font-size: 1.2rem; margin: 20px 0 10px 0; }
+        h4 { color: var(--color-text); font-size: 1.1rem; margin: 15px 0 8px 0; }
+        p { margin-bottom: 15px; color: var(--color-text); }
+        ul { margin: 15px 0; padding-left: 30px; }
+        li { margin-bottom: 8px; color: var(--color-text); }
+        .highlight {
+            background: color-mix(in srgb, var(--color-primary) 20%, transparent);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--color-text);
+            font-weight: 600;
+        }
+        .definition-box {
+            background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 10%, transparent) 0%, color-mix(in srgb, var(--color-accent) 10%, transparent) 100%);
+            border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .definition-box h3 { color: var(--color-text); margin-bottom: 15px; }
+        .contact-box {
+            background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 10%, transparent) 0%, color-mix(in srgb, var(--color-accent) 10%, transparent) 100%);
+            border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .contact-box a { color: var(--color-primary); text-decoration: none; font-weight: 600; }
+        .contact-box a:hover { color: var(--color-secondary); text-decoration: underline; }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        .footer a { color: var(--color-primary); text-decoration: none; }
+        .footer a:hover { color: var(--color-secondary); text-decoration: underline; }
+        @media (max-width: 768px) {
+            .container { padding: 20px; margin: 10px; }
+            .logo { font-size: 2rem; }
+            h1 { font-size: 1.6rem; }
+            h2 { font-size: 1.2rem; }
+        }
+
+        .preamble {
+            background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 8%, transparent) 0%, color-mix(in srgb, var(--color-accent) 8%, transparent) 100%);
+            border: 1px solid color-mix(in srgb, var(--color-primary) 25%, transparent);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 28px;
+        }
+        .preamble p { margin-bottom: 12px; }
+        .preamble p:last-child { margin-bottom: 0; }
 </style>
 </head>
 <body>
-<div class="band" aria-hidden="true"></div>
-<main class="wrap">
-  <h1>DocReader Privacy Choices</h1>
-  <p class="app">DocReader</p>
-  <p class="intro">At DocReader, we empower you to control your personal data. This page outlines the choices available to you regarding your information and how you can exercise your rights under regulations like GDPR and CCPA.</p>
+<div class="container">
+  <div class="header">
+    <div class="logo">DocReader</div>
+    <div class="subtitle">End-user license agreement and terms of service for the DocReader mobile application.</div>
+  </div>
+
+  <h1>Terms and Conditions of Use</h1>
+  <div class="last-updated">Last updated: July 2026</div>
+
   
-  <section>
-    <h2>Managing App Permissions</h2>
-    <p>You can manage DocReader&#39;s access to your camera and photo library at any time through your mobile device&#39;s system settings. Revoking these permissions will prevent the app from reading new images but will not affect previously generated PDFs on your device.</p>
-  </section>
   
-  <section>
-    <h2>Accessing and Deleting Your Files</h2>
-    <p>Because DocReader runs entirely locally, all generated PDF files are saved directly to your device&#39;s storage. You can access, share, rename, or permanently delete these files at any time using your device&#39;s default file manager or gallery. We do not keep copies of your documents.</p>
-  </section>
+  <div class="preamble">
+    <p>Please read these Terms and Conditions of Use (&#34;Terms&#34;) carefully before downloading, installing, or using the DocReader mobile application (&#34;App&#34;).</p><p>By accessing or using DocReader, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must uninstall and cease all use of the App.</p>
+  </div>
   
-  <section>
-    <h2>Deleting Your App Data</h2>
-    <p>To wipe all application state and settings, you can uninstall DocReader from your device. This action will clear any temporary cache files created during PDF conversion. Please ensure you have backed up any important PDFs to your local storage before uninstalling.</p>
-  </section>
   
-  <section>
-    <h2>Opt-Out and Contact Requests</h2>
-    <p>DocReader does not track, sell, or share your data with advertisers. Therefore, there are no opt-out mechanisms required for cross-site tracking or data sales. If you have specific inquiries regarding your privacy rights, please submit a request to privacy@docreaderapp.com.</p>
-  </section>
+
   
-</main>
+  <h2>1. User Agreement and EULA</h2>
+  <p>These Terms constitute a legal agreement between you and the application provider. Your use of the App is also governed by the Standard Licensed Application End User License Agreement (EULA) provided by the application store from which you downloaded the App (Apple App Store or Google Play Store).</p>
+  
+  
+  
+  
+  <h2>2. Scope of License</h2>
+  <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use DocReader on compatible mobile devices owned or controlled by you.</p><p>This license is granted solely for your personal, non-commercial use, or internal business operations, subject to your compliance with these Terms.</p>
+  
+  
+  
+  
+  <h2>3. User Responsibility for Content</h2>
+  <p>You retain all rights and ownership of any images, photographs, or documents you process, import, or generate using DocReader.</p><p>Because DocReader processes and saves all files locally on your device, you are solely responsible for managing and backing up your documents. We cannot recover lost, deleted, or corrupted files.</p>
+  
+  
+  
+  
+  <h2>4. Prohibited Conduct</h2>
+  <p>You agree to use DocReader only for lawful purposes and in accordance with these Terms. You are strictly prohibited from engaging in the following activities:</p>
+  
+  <ul><li>Decompiling, reverse engineering, disassembling, or attempting to derive the source code of the App.</li><li>Using the App to infringe upon the intellectual property rights, privacy, or legal rights of others.</li><li>Bypassing or attempting to disable any security features or license verification systems within the App.</li><li>Distributing harmful, illegal, or malicious documents created or compiled through the App.</li></ul>
+  
+  
+  
+  
+  <h2>5. Fees and Store Transactions</h2>
+  <p>DocReader may be downloaded free of charge. Optional premium upgrades, feature unlocks, or subscriptions may be offered as shown in the app and store.</p><p>All transactions, billing, and subscription management are handled by the platform store (Apple App Store or Google Play Store) through your store account. Platform terms and conditions apply to all purchases.</p>
+  
+  
+  
+  
+  <h2>6. Subscription Renewal and Cancellation</h2>
+  <p>For any recurring subscriptions, your account will be charged for renewal within 24 hours prior to the end of the current period.</p><p>You can disable auto-renewal or manage your subscriptions at any time via your device&#39;s store account settings. Cancellation will take effect at the end of the active billing cycle; no partial refunds are offered.</p>
+  
+  
+  
+  
+  <h2>7. Intellectual Property Rights</h2>
+  <p>Except for your user-generated content, all rights, titles, and interests in DocReader—including the user interface, graphics, design, source code, and underlying algorithms—remain the exclusive property of the App provider and its licensors.</p>
+  
+  
+  
+  
+  <h2>8. Disclaimer of Warranties</h2>
+  <p>DocReader is provided on an &#34;AS IS&#34; and &#34;AS AVAILABLE&#34; basis, without any warranties of any kind, either express or implied.</p><p>We do not warrant that the App will meet your specific requirements, will operate without interruption, will be completely secure or free of bugs, or that the resulting PDF quality will satisfy all professional standards.</p>
+  
+  
+  
+  
+  <h2>9. Limitation of Liability</h2>
+  <p>To the maximum extent permitted by law, in no event shall the App provider, its affiliates, or developers be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including loss of data, loss of profits, goodwill, or other intangible losses arising from your use of the App.</p><p>Our total aggregate liability for all claims related to the App shall not exceed the amount you paid, if any, to use the App during the active subscription period.</p>
+  
+  
+  
+  
+  <h2>10. Indemnification</h2>
+  <p>You agree to defend, indemnify, and hold harmless the App provider, its officers, directors, employees, and agents from any claims, liabilities, damages, losses, and expenses (including legal fees) arising from your misuse of the App, violation of these Terms, or infringement of third-party rights.</p>
+  
+  
+  
+  
+  <h2>11. Governing Law</h2>
+  <p>These Terms shall be governed by and interpreted under the laws of the jurisdiction of the App provider&#39;s registration, without regard to its conflict of law principles.</p><p>Any legal disputes arising from these Terms or your use of the App will be resolved in the competent courts of that jurisdiction.</p>
+  
+  
+  
+  
+  <h2>12. Severability</h2>
+  <p>If any provision of these Terms is deemed invalid or unenforceable by a court of law, the remaining provisions shall continue in full force and effect, and the invalid provision will be replaced with a valid provision that best reflects our original intent.</p>
+  
+  
+  
+  
+  <h2>13. Termination of License</h2>
+  <p>We reserve the right to suspend or terminate your license to use DocReader at our sole discretion, without notice, if you violate any provision of these Terms.</p><p>Upon termination, you must uninstall the App and delete all local copies from your devices.</p>
+  
+  
+  
+  
+  <h2>14. Changes to Terms</h2>
+  <p>We reserve the right to modify these Terms at any time. Changes will be updated on this page with a revised date.</p><p>Your continued use of the App following any changes indicates your agreement to the modified Terms.</p>
+  
+  
+  
+  
+  <h2>15. Contact and Inquiries</h2>
+  <p>If you have any questions, feedback, or legal claims regarding the App or these Terms, please contact us through the app store listing support email or our support channel.</p>
+  
+  
+  
+  
+
+  
+  <div class="contact-box">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, you can contact us:</p>
+    <h3>By email: <a href="mailto:support@example.com">support@example.com</a></h3>
+  </div>
+  
+
+  <div class="footer">
+    <p>&copy; 2026 DocReader. All rights reserved.</p>
+    
+    <p><a href="support.html">Support</a> | <a href="privacy.html">Privacy Policy</a></p>
+    
+  </div>
+</div>
 </body>
 </html>
