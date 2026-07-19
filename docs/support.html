@@ -5,30 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DocReader Support</title>
 <style>
-  :root { color-scheme: light; }
-  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.55; color: #1a1a1a; background: #f7f5f1; }
+  :root {
+    color-scheme: light;
+    --color-primary: #1d3253;
+    --color-secondary: #3a5273;
+    --color-accent: #4a90e2;
+    --color-background: #fdfefd;
+    --color-text: #233a5a;
+  }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.55; color: var(--color-text); background: var(--color-background); }
+  .band { height: 4px; background: var(--color-primary); }
   .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
-  h1 { font-size: 1.85rem; margin: 0 0 0.75rem; letter-spacing: -0.02em; }
-  .app { color: #5c5c5c; font-size: 0.95rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; margin: 0 0 0.75rem; letter-spacing: -0.02em; color: var(--color-primary); }
+  .app { color: var(--color-secondary); font-size: 0.95rem; margin-bottom: 1.5rem; }
   .intro { margin: 0 0 1.75rem; }
-  h2 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; }
+  h2 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; color: var(--color-secondary); border-left: 3px solid var(--color-accent); padding-left: 0.65rem; }
   p { margin: 0 0 0.85rem; }
+  a { color: var(--color-primary); }
 </style>
 </head>
 <body>
+<div class="band" aria-hidden="true"></div>
 <main class="wrap">
   <h1>DocReader Support</h1>
   <p class="app">DocReader</p>
-  <p class="intro">Welcome to the DocReader support page. We are here to help you easily convert your images into PDF documents. Find answers to common questions below or contact us for further assistance.</p>
+  <p class="intro">Welcome to the DocReader Support center. We are here to help you get the most out of our application. If you have any questions, encounter issues, or want to share feedback, please review our FAQ or get in touch with us directly.</p>
   
   <section>
     <h2>Frequently Asked Questions</h2>
-    <p>How do I create a PDF from multiple images? To convert multiple images, select the gallery or camera option, select all the images you want to include, rearrange them if necessary, and tap the convert button to generate your single PDF file.</p><p>Are my documents secure? Yes. DocReader processes all image-to-pdf conversions locally on your mobile device. Your files and photos are never uploaded to our servers or shared with any third parties.</p>
+    <p>How do I convert my images into a PDF?
+To create a PDF, open DocReader and tap the option to add images. You can choose to capture a new photo using your device&#39;s camera or select existing images from your gallery. Once you have added and arranged your pages, tap the generate button to save your PDF document.</p><p>Are my documents and photos secure?
+Yes. Security and privacy are core features of DocReader. All image processing and PDF conversion tasks are performed locally on your device. Your photos, text, and generated PDF files are never uploaded to any remote server or shared with third parties.</p><p>Can I combine multiple photos into a single PDF?
+Yes. DocReader fully supports multi-page PDF generation. You can select multiple images from your photo library or take several pictures in sequence, and they will be compiled into a single PDF document in the order you specify.</p>
   </section>
   
   <section>
-    <h2>Contact Us</h2>
-    <p>If you experience any issues, have feature suggestions, or need further assistance, please contact our support team. We aim to respond to all inquiries within 24 to 48 hours.</p><p>You can reach us by email at support@docreaderapp.example.com. Please include your device model and app version for faster troubleshooting.</p>
+    <h2>Contact Support</h2>
+    <p>If you experience any technical issues or have suggestions on how we can improve DocReader, please feel free to reach out to our team.</p><p>You can contact us via email at support@docreaderapp.com. To help us resolve your issue faster, please include details about your device model, operating system version, and a brief description of the problem.</p>
   </section>
   
 </main>
